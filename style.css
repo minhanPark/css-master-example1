@@ -1,0 +1,139 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css reset 부분 */
+
+body {
+  background-color: #dfe6e9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr 50px;
+  ;
+}
+
+.header {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.hamberger-icon {
+  font-weight: 700;
+  font-size: 24px;
+  transform: rotate(90deg);
+  margin-right: 30px;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.contents {
+  padding-left: 90px;
+  display: grid;
+  grid-template-columns: minmax(270px, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(250px, 1fr);
+  grid-template-rows: 55vh;
+  grid-auto-rows: 55vh;
+  overflow: scroll;
+  grid-gap: 20px;
+  padding-bottom: 20px;
+}
+
+.contents::-webkit-scrollbar {
+  display: none;
+}
+
+.content-item {
+  display: flex;
+  align-items: flex-end;
+  background-image: url(https://i.pinimg.com/564x/b5/22/65/b52265e5f6786729ad37dce984489093.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: 0 3px 2px #777;
+  -moz-box-shadow: 0 3px 2px #777;
+  box-shadow: 0 3px 2px #777;
+}
+
+.content-text {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content-text h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.links {
+  font-size: 18px;
+  text-transform: uppercase;
+  display: flex;
+}
+
+.links li {
+  margin-right: 12px;
+}
+
+.sns-icons {
+  display: flex;
+}
+
+.sns-icons li:first-child {
+  margin-right: 12px;
+}
